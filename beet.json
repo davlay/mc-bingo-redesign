@@ -1,0 +1,25 @@
+{
+    "name":"Project: Bingo CR",
+    "description":"Time to redesign the Bingo data pack, automate it, and open source it.",
+
+    "require": [
+        "bolt"
+    ],
+
+    "pipeline": [
+        "mecha"
+    ],
+
+    "data_pack": {
+        "load": ["src"],
+        "pack_format": 121
+    },
+
+    "output": "build",
+
+    "meta": {
+        "bolt": {
+            "entrypoint":["bingo:main"]
+        }
+    }
+}
